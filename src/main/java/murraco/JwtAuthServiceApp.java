@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import lombok.RequiredArgsConstructor;
-import murraco.model.AppUser;
-import murraco.model.AppUserRole;
+import murraco.appuser.AppUser;
+import murraco.appuser.AppUserRole;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import murraco.service.UserService;
+import murraco.appuser.UserService;
 
 @SpringBootApplication
 @RequiredArgsConstructor

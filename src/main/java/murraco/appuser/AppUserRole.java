@@ -1,4 +1,4 @@
-package murraco.model;
+package murraco.appuser;
 
 import org.springframework.security.core.GrantedAuthority;
 

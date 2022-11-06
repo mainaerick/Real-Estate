@@ -1,4 +1,4 @@
-package murraco.exception;
+package murraco.exception_handler;
 
 import org.springframework.http.HttpStatus;
 

@@ -1,4 +1,4 @@
-package murraco.security;
+package murraco.auth.security;
 
 import java.util.Base64;
 import java.util.Date;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 
-import murraco.model.AppUserRole;
+import murraco.appuser.AppUserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -23,7 +23,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import murraco.exception.CustomException;
+import murraco.exception_handler.CustomException;
 
 @Component
 public class JwtTokenProvider {

@@ -1,4 +1,4 @@
-package murraco.model;
+package murraco.appuser;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
