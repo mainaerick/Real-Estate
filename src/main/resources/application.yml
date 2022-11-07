@@ -1,27 +1,42 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  port: 8844
+
 spring:
   datasource:
-    url: jdbc:h2:mem:test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    # url: jdbc:mysql://localhost:3306/user_db
+    password:
+    url: jdbc:MYSQL://localhost:3306/property_management
     username: root
-    password: root
-  tomcat:
-    max-wait: 20000
-    max-active: 50
-    max-idle: 20
-    min-idle: 15
   jpa:
     hibernate:
       ddl-auto: create-drop
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
-        # dialect: org.hibernate.dialect.MySQL8Dialect
-        format_sql: true
-        id:
-          new_generator_mappings: false
 
-server:
-   port: 8080 # This is the default port anyway, but you can change it here
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: annewanjikun05@gmail.com
+    password: womtbtpmhgyxxzcz
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
 
 security:
   jwt:

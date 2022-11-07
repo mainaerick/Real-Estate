@@ -22,7 +22,7 @@
 spring-boot-jwt/
  │
  ├── src/main/java/
- │   └── murraco
+ │   └── devric
  │       ├── configuration
  │       │   └── SwaggerConfig.java
  │       │
