@@ -27,20 +27,17 @@ public class Review {
     @JsonIgnore
     @ManyToOne
     private Property property;
-    @JsonIgnore
-    @ManyToOne
-    private AppUser appUser;
+
 
     public Review() {
     }
 
-    public Review(Long id, String title, int rating, String review, Property property, AppUser appUser) {
+    public Review(Long id, String title, int rating, String review, Property property) {
         this.id = id;
         this.title = title;
         this.rating = rating;
         this.review = review;
         this.property = property;
-        this.appUser = appUser;
     }
 
     public Long getId() {
@@ -83,11 +80,4 @@ public class Review {
         this.property = property;
     }
 
-    public AppUser getAppUser() {
-        return appUser;
-    }
-
-    public void setAppUser(AppUser appUser) {
-        this.appUser = appUser;
-    }
-}
+   }
