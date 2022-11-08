@@ -79,7 +79,6 @@ public class PropertyController {
         return ResponseEntity.created(uri).build();
     }
     @DeleteMapping("/delete/{propertyId}")
-    @GetMapping("/{propertyId}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @ApiOperation(value = "${PropertyController.delete}", response = Property.class, authorizations = { @Authorization(value="apiKey") })
     @ApiResponses(value = {//
