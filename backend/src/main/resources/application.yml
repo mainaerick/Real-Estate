@@ -11,7 +11,7 @@ spring:
     username: root
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     properties:
       hibernate:
 
@@ -45,7 +45,7 @@ security:
       expire-length: 300000000 # 5 minutes duration by default: 5 minutes * 60 seconds * 1000 miliseconds
       
 UserController:
-  signin: Authenticates user and returns its JWT token.
+  signing: Authenticates user and returns its JWT token.
   signup: Creates user and returns its JWT token
   delete: Deletes specific user by username
   search: Returns specific user by username

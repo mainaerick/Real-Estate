@@ -33,6 +33,7 @@ public class Property {
     @ManyToOne(fetch = FetchType.LAZY)
     private AppUser user;
 
+
     public Property() {
 
     }
